@@ -1,0 +1,296 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     background-image: url(./images/bg-intro-desktop.png);
+     background-color: rgba(255, 121, 121, 0.9);
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .container {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     width: 90%;
+     max-width: 1200px;
+     flex: 1;
+     gap: 50px;
+ }
+ 
+ .component1 {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex: 1;
+ }
+ 
+ h1 {
+     font-family: Poppins;
+     font-size: 50px;
+     line-height: 55px;
+     color: white;
+     text-align: left;
+ }
+ 
+ .left-text {
+     color: white;
+     font-family: Poppins;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 26px;
+     text-align: left;
+     padding-top: 25px;
+ }
+ 
+ .component2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex: 1;
+ }
+ 
+ .pay {
+     background-color: #5E54A4;
+     color: white;
+     text-align: center;
+     margin-bottom: 15px;
+     border-radius: 10px;
+     font-family: Poppins;
+     font-size: 15px;
+     font-weight: 700;
+     width: 100%;
+     margin-right: 20px;
+     line-height: 26px;
+     padding: 16px;
+     box-shadow: inset
+ }
+ 
+ .pay-text {
+     font-weight: 400;
+ }
+ 
+ form {
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 474px;
+     justify-content: space-around;
+     padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+form .checking1 {
+    position: absolute;
+    top: 41px;
+    right: 50px;
+}
+
+form .checking2 {
+    position: absolute;
+    top: 125px;
+    right: 50px;
+}
+
+form .checking3 {
+    position: absolute;
+    top: 208px;
+    right: 50px;
+}
+
+form .checking4 {
+    position: absolute;
+    top: 290px;
+    right: 50px;
+ }
+ 
+ form input {
+    background: url(./images/icon-error.svg) no-repeat center right 20px /contain;
+    background: none;
+    background-size: 27px;
+     border: none;
+     border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    border-radius: 7px;
+     width: 100%;
+     height: 56px;
+     padding-left: 10px;
+     color: #3D3B48;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+}
+
+.back {
+    background: url(./images/icon-error.svg) no-repeat center right 20px /contain;
+    background-size: 27px;
+    border: none;
+    border: 1px solid #DEDEDE;
+    border-radius: 7px;
+    width: 100%;
+    height: 56px;
+    padding-left: 10px;
+     color: #3D3B48;
+     font-family: Poppins;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 26px;
+     letter-spacing: 0.25px;
+    border-color: #FF7979;
+}
+
+.msg1 {
+    align-self: end;
+    font-size: 11px;
+    align-content: flex-end;
+}
+ 
+.msg2 {
+    align-self: end;
+    font-size: 11px;
+    align-content: flex-end;
+}
+
+.msg3 {
+    align-self: end;
+    text-align: right;
+    font-size: 11px;
+    align-content: flex-end;
+}
+.msg4 {
+    align-self: end;
+    text-align: right;
+    font-size: 11px;
+    align-content: flex-end;
+}
+
+button {
+     background-color: #38CC8B;
+     text-transform: uppercase;
+     color: white;
+     text-align: center;
+    border-radius: 10px;
+    border-radius: 7px;
+     font-family: Poppins;
+     font-size: 15px;
+     font-weight: 600;
+     width: 100%;
+     height: 56px;
+     letter-spacing: 1px;
+     line-height: 26px;
+     border: none;
+ }
+ 
+ form button:hover {
+     background-color: rgba(119, 226, 179, 0.9);
+ }
+ 
+ form small {
+     font-family: Poppins;
+     font-weight: 500;
+     font-size: 11px;
+     font-weight: 26px;
+     text-align: center;
+     color: #BAB7D4;
+ }
+ 
+ form span {
+     font-weight: 700;
+     color: #FF7979;
+ }
+ 
+.error {
+    color: #FF7979;
+    font-family: Poppins;
+    font-weight: 400;
+    text-align: right;
+}
+.successful {
+   color: #38CC8B;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.noPhoto {
+    border-color: #38CC8B;
+    background: none;
+}
+
+
+ @media screen and (max-width: 900px) {
+ 
+     .container {
+         gap: 20px;
+     }
+ 
+     .h1 {
+         font-size: 40px;
+     }
+ 
+     .left-text {
+         padding-top: 15px;
+         font-size: 18px;
+     }
+ }
+ 
+ @media screen and (max-width: 700px) {
+ 
+     h1 {
+         font-size: 30px;
+     }
+ 
+     .left-text {
+         font-size: 13px;
+     }
+ 
+     .pay {
+         line-height: 14px;
+     }
+ }
+ 
+ @media screen and (max-width: 550px), screen and (max-width: 650px) and (orientation: landscape) {
+     body {
+         height: 100%;
+     }
+     .container {
+         display: flex;
+         flex-direction: column;
+         margin: 24px;
+     }
+ 
+     h1 {
+         text-align: center;
+     }
+ 
+     .left-text {
+         text-align: center;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 26px;
+     }
+ 
+     .pay {
+         height: 70px;
+         text-align: center;
+         margin-top: 30px;
+         line-height: 20px;
+     }
+}
+
